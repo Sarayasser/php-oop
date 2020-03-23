@@ -31,12 +31,20 @@
          'required' => true 
     ]);
 
-    // also, create $form->radio(), 
-    // $form->textarea(), 
-    // $form->submit(), 
-    // $form->button(), 
+    $form->radio([ 
+         'name' => 'gender', 
+         'options' => [
+             '1' => 'Happy', 
+             '2' => 'Sad',
+             '3' => 'Bored', 
+             '4' => 'Excited',
+         ]
+    ]);
+    $form->textarea();
+    $form->submit(); 
+    // $form->button(); 
     // $form->hidden()
 
-    //echo Bootstrap::header();
+    // echo $form->header();
     echo $form->html();
-    //echo Bootstrap::footer();
+    // echo Bootstrap::footer();
